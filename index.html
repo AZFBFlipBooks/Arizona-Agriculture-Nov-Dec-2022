@@ -297,6 +297,14 @@ flipbook.addEventListener('touchend', e => {
     }
 }, { passive: false });
 
+        // Set initial zoom level to 20
+window.addEventListener('load', () => {
+    const zoomSlider = document.getElementById('zoom-slider');
+    zoomSlider.value = 5;
+    zoomSlider.dispatchEvent(new Event('input'));
+});
+
+
     </script>
    
     
